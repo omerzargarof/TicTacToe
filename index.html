@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="mainTable" class="wrapper">
+        <div id="cell1" class="box" onclick="fill('1')">  </div>
+        <div id="cell2" class="box" onclick="fill('2')"> </div>
+        <div id="cell3" class="box" onclick="fill('3')"> </div>
+        <div id="cell4" class="box" onclick="fill('4')"> </div>
+        <div id="cell5" class="box" onclick="fill('5')"> </div>
+        <div id="cell6" class="box" onclick="fill('6')"> </div>
+        <div id="cell7" class="box" onclick="fill('7')"> </div>
+        <div id="cell8" class="box" onclick="fill('8')"> </div>
+        <div id="cell9" class="box" onclick="fill('9')"> </div>
+    </div>
+    
+    <!--input type="button" value="printArr BOARD" onclick="printArr()"/-->
+    <input type="button" value="SET" onclick="reset()"/>
+    <input type="button" value="UNDO" onclick="stepBack()"/>
+    <input type="button" value="REDO" onclick="stepForward()"/>
+    <br>
+    <input type="button" value="change size" onclick="changeBoardSize()"/>
+    <input type="button" value="chaoose start Player" onclick="chooseStartPlayer()"/>
+    <input type="button" value="hide" onclick="hide()"/>
+    <input type="button" value="LOAD GAME" onclick="loadPeakGame()"/>
+    <br>
+  
+    <script type="text/javascript" class="ox" src="javascript.js"></script>
+</body>
+</html>
